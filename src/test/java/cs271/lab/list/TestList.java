@@ -170,7 +170,6 @@ public class TestList {
     list.add(55);
     list.add(77);
     list.add(66);
-    // TODO use the set method to change specific elements in the list
     list.set(1, 99);
     list.set(3, 99);
     list.set(5,99);
@@ -195,8 +194,6 @@ public class TestList {
     list.add(55);
     list.add(77);
     list.add(66);
-    // TODO fix the arguments in the subList method so that the assertion
-    // passes
-    assertEquals(List.of(44, 77, 55), list.subList(0, 0));
+    assertEquals(List.of(44, 77, 55), list.subList(2, 5));
   }
 }
